@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<title>Login</title>
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <img class="logo_img" src="img/ummalogo.png" alt="logo">
+    </div>
+
+    <div class="description">
+      <h4>Distance doesn't matter!</h4>
+      <p>Use UMMA connect to speak to a visitor in another museum. Talk about the art in front of you, the pandemic or just 2020!</p>
+    </div>
+
+    <div class="boxes">
+        <input type="checkbox" id="box_1">
+        <label for="box_1">
+            <p>Are you above the age of 18?</p>
+        </label>
+
+    <input type="checkbox" id="box_2">
+    <label for="box_2">Do you agree to the terms and conditions?</label>
+
+    </div>
+
+    <div class="button_container">
+        
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm"> START CALL</button> -->
+        <!-- <a href="tel:123-456-7890"></a> -->
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            START CALL
+        </button>
+    </div>
+
+    <!-- Small modal -->
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-title" id="exampleModalCenterTitle">To initiate a connect call</p>
+                <br>
+                <h4>UMMA Connect would like to access your microphone</h4>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary negative" data-dismiss="modal"><a href="index.html">Don't allow</a></button>
+              <button type="button" class="btn btn-secondary positive"><a href="waiting.html">Ok</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+</div>
+
+</body>
+</html>

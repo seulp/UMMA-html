@@ -1,0 +1,159 @@
+
+/*Page styles*/
+html { height: 100%; }
+
+body {
+    height: 100%;
+    margin: 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway',sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    display: inline-block;
+}
+.logo .logo_img{
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+
+}
+
+.description{
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    margin-top: 14%;
+}
+
+.description h4{
+    color: #10069f;
+    font-weight: bolder;
+}
+
+.description p{
+    font-size: 12px;
+}
+
+.boxes {
+    margin: auto;
+    padding: 60px;
+    /* width: 90%; */
+    margin-bottom: 12%;
+}
+
+
+/*Checkboxes styles*/
+input[type="checkbox"] { 
+    display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  width: 95%;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 48px;
+  font: 15.3px/20px Raleway,sans-serif;
+  color: #5a5a5a;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* line-height: 32px; */
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #10069f;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* START button */
+
+.button_container{
+    width:100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary{
+    width: 70%;
+    height: 48px;
+    border-radius: 10px;
+    border-color: #10069f;
+    background-color: #10069f;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-primary:hover{
+    border-color: #10069f;
+    background-color: #ffffff;
+    color: #10069f
+}
+
+
+.modal-content{
+    height:200px;
+    width:85%;
+    margin: 0 auto;
+}
+
+.modal-title{
+    text-align: center;
+    font-size: small;
+
+}
+.modal-body{
+    text-align: center;
+}
+
+.btn-secondary{
+    width: 48%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.positive, .negative{
+    font-size: 14px;
+}
+
+.positive{
+    background-color: #6ec37c;
+    border-color: #6ec37c;
+}
+
+.negative{
+    background-color: #df546a;
+    border-color: #df546a;
+
+}
